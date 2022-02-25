@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600;700&display=swap');
+
+@import './header';
+@import './main';
+@import './footer';
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+body{
+    min-height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
