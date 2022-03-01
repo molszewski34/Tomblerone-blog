@@ -109,6 +109,10 @@ main {
           justify-content: space-between;
 }
 
+.main-header h3 {
+  text-align: center;
+}
+
 .line {
   width: 112px;
   height: 47px;
@@ -125,10 +129,12 @@ hr {
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(427px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(427px, 1fr));
-  grid-gap: 2em;
-  padding: 2em;
+  -ms-grid-columns: (minmax(427px, 427px))[3];
+      grid-template-columns: repeat(3, minmax(427px, 427px));
+  grid-gap: 40px;
+  place-content: center;
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 article {
@@ -141,18 +147,21 @@ article {
           flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #000;
+  -webkit-box-shadow: 2px 3px 5px 0px #CECEDD;
+          box-shadow: 2px 3px 5px 0px #CECEDD;
   cursor: pointer;
 }
 
 article img {
-  width: 100%;
+  width: 427px;
+  height: 427px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 article p {
   padding: 1em;
+  font-size: 24px;
 }
 
 footer {
