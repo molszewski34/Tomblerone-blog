@@ -120,18 +120,55 @@ article img {
      object-fit: cover;
 }
 
+.img-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 175px;
+  border-radius: 12px 12px 0px 0px;
+}
+
 .section-articles {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 1em;
+  -webkit-box-shadow: 2px 3px 7px 0px #CECEDD;
+          box-shadow: 2px 3px 7px 0px #CECEDD;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.section-side {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-side h3 {
-  padding: .5em;
-  font-size: 1.8em;
-  text-align: center;
+  padding: 0.5em;
+  font-size: 1.2em;
+  text-align: left;
   letter-spacing: 2px;
-  margin-bottom: 2em;
 }
 
 .article-main {
@@ -159,7 +196,8 @@ article img {
   font-size: 24px;
 }
 
-.article-top__wrapper, .article-middle__wrapper {
+.article-top__wrapper,
+.article-middle__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,9 +211,11 @@ article img {
 .articles-side {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-rows: (427px, 427px)[4]; */
-      grid-template-rows: repeat(4, 427px, 427px);
-  grid-row-gap: 3em;
+  -ms-grid-rows: repeat 6, 215px;
+      grid-template-rows: repeat 6, 215px;
+  -ms-grid-columns: 310px;
+      grid-template-columns: 310px;
+  grid-row-gap: 2em;
 }
 
 .article-side {
@@ -186,13 +226,15 @@ article img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 10px;
-  border: 1px solid #000;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 3px 5px 0px #CECEDD;
+          box-shadow: 2px 3px 5px 0px #CECEDD;
 }
 
 .article-side img {
-  width: 100%;
-  height: 100%;
+  width: 310px;
+  height: 123px;
 }
 
 .article-side span {
