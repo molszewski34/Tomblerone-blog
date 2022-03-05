@@ -5,21 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/article.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
     <title>Tomblerone Blog -Chorwacja</title>
   </head>
   <body>
       <header>
-    <nav>
-      <div class="logo">LOGO</div>
-      <ul>
-        <li>ELEMENT MENU</li>
-        <li>ELEMENT MENU</li>
-        <li>ELEMENT MENU</li>
-
-        <li><img src="/imgs/icons8-search.svg" alt="" /></li>
-      </ul>
-    </nav>
+   
+      <nav>
+        <div class="logo">
+          <img src="imgs/Vector.png" alt="" />
+          <span>Logoipsum</span>
+        </div>
+        <ul>
+          <li class="header-li">
+            <form class="search-bar" action="3">
+                <input
+                    class="search-bar-input"
+                    type="search"
+                    placeholder="Search here ..."
+                />
+                <i class="fa fa-search search"></i>
+            </form>
+        </li>
+          <!-- <li><img src="imgs/icons8-search.svg" alt="" /></li> -->
+          <li><button class="newsletter">Subskrybuj newsletter</button></li>
+        </ul>
+      </nav>
+  
 </header>
     <main>
         <section class="section-articles">
@@ -121,13 +136,29 @@
     </section>
     </main>
     <footer>
-        <span>TREŚĆ</span>
-        <ul>
-          <li>ELEMENT STOPKI</li>
-          <li>ELEMENT STOPKI</li>
-          <li>ELEMENT STOPKI</li>
-        
+      <div class="footer-left">
+        <h4>Informacje</h4>
+        <ul class="footer-left__list">
+          <li>O nas</li>
+          <li>Źródła informacji</li>
+          <li>Kontakt</li>
         </ul>
-      </footer>
+      </div>
+
+      <div class="footer-right">
+        <h4>Nowe wpisy nie muszą Cię omijać</h4>
+        <form>
+          <div class="input-wrapper">
+          <input type="text" placeholder="Imię"/>
+          <i class="fa fa-user fa-lg footer-icon name"></i>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" placeholder="E-mail" />
+          <i class="fa fa-envelope fa-lg footer-icon email"></i>
+        </div>
+        </form>
+        <button class="footer-btn">Subskrybuj newsletter</button>
+      </div>
+    </footer>
   </body>
 </html>
