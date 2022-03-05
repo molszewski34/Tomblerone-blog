@@ -90,7 +90,10 @@ input::placeholder, input{
     font-size: 14px;
     font-weight: 600;
     width: 70%;
-    padding: 12px 18px;
+    padding: 15px 18px;
+
+
+    transition:  0.3s;
 }
 
 .footer-btn:hover{
