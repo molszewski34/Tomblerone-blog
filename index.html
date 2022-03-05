@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tomblerone Blog -Chorwacja</title>
     <link rel="stylesheet" href="./dist/css/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">LOGO</div>
+        <div class="logo">
+          <img src="imgs/Vector.png" alt="" />
+          <span>Logoipsum</span>
+        </div>
         <ul>
-          <li>ELEMENT MENU</li>
-          <li>ELEMENT MENU</li>
-          <li>ELEMENT MENU</li>
-
-          <li><img src="imgs/icons8-search.svg" alt="" /></li>
+          <li class="header-li">
+            <form class="search-bar" action="3">
+                <input
+                    class="search-bar-input"
+                    type="search"
+                    placeholder="Search here ..."
+                />
+                <i class="fa fa-search search"></i>
+            </form>
+        </li>
+          <!-- <li><img src="imgs/icons8-search.svg" alt="" /></li> -->
+          <li><button class="newsletter">Subskrybuj newsletter</button></li>
         </ul>
       </nav>
       <div class="header__hero">
@@ -48,80 +63,77 @@
           <p>Kiedy odwiedzić Chorwację? Praktyczne porady</p>
         </article>
         <article>
-          <img
-            src="imgs/5d8f594a1795a894666547.jpg"
-            alt=""
-          />
+          <img src="imgs/5d8f594a1795a894666547.jpg" alt="" />
 
           <p>Kuchnia Chorwatów. Co zjem na wymarzonym urlopie?</p>
         </article>
         <article>
-          <img
-            src="imgs//hotel8.png"
-            alt=""
-          />
+          <img src="imgs//hotel8.png" alt="" />
 
           <p>Top 10 najlepszych hoteli według naszych czytelników</p>
         </article>
         <article>
-          <img
-            src="imgs/summer-travel-items-FI.jpg"
-            alt=""
-          />
+          <img src="imgs/summer-travel-items-FI.jpg" alt="" />
 
           <p>Must have podróżnika. Te rzeczy mogą Ci się przydać!</p>
         </article>
         <article>
-          <img
-            src="imgs//shutterstockRF_1188260494.jpg"
-            alt=""
-          />
+          <img src="imgs//shutterstockRF_1188260494.jpg" alt="" />
 
           <p>Autem, komunikacją miejską czy pieszo? Jak zwiedzać?</p>
         </article>
         <article>
           <img
-          src="imgs/croatia-in-pictures-most-beautiful-places-to-visit-hvar-island.jpg" alt="">
-        
+            src="imgs/croatia-in-pictures-most-beautiful-places-to-visit-hvar-island.jpg"
+            alt=""
+          />
 
-          <p>  Kiedy odwiedzić Chorwację? Praktyczne porady</p>
+          <p>Kiedy odwiedzić Chorwację? Praktyczne porady</p>
         </article>
         <article>
           <!-- <img src="imgs/sucuraj_hvar_information.jpg" alt="" /> -->
-          <img
-          src="imgs/dalmacja_0.jpg"
-            alt=""
-          />
+          <img src="imgs/dalmacja_0.jpg" alt="" />
 
           <p>Top 10 miejsc które musisz odwiedzić podróżując po Dalmacji.</p>
         </article>
         <article>
           <!-- <img src="imgs/sucuraj_hvar_information.jpg" alt="" /> -->
-          <img
-          src="imgs//shutterstockRF_1188260494.jpg"
-          alt=""
-          />
+          <img src="imgs//shutterstockRF_1188260494.jpg" alt="" />
 
           <p>Autem, komunikacją miejską czy pieszo? Jak zwiedzać?</p>
         </article>
         <article>
           <!-- <img src="imgs/sucuraj_hvar_information.jpg" alt="" /> -->
-          <img
-            src="imgs/dalmacja_3.jpg"
-            alt=""
-          />
+          <img src="imgs/dalmacja_3.jpg" alt="" />
 
-          <p>  Kiedy odwiedzić Chorwację? Praktyczne porady</p>
+          <p>Kiedy odwiedzić Chorwację? Praktyczne porady</p>
         </article>
       </section>
     </main>
     <footer>
-      <span>TREŚĆ</span>
-      <ul>
-        <li>ELEMENT STOPKI</li>
-        <li>ELEMENT STOPKI</li>
-        <li>ELEMENT STOPKI</li>
-      </ul>
+      <div class="footer-left">
+        <h4>Informacje</h4>
+        <ul class="footer-left__list">
+          <li>O nas</li>
+          <li>Źródła informacji</li>
+          <li>Kontakt</li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h4>Nowe wpisy nie muszą Cię omijać</h4>
+        <form>
+          <div class="input-wrapper">
+          <input type="text" placeholder="Imię"/>
+          <i class="fa fa-user fa-lg footer-icon name"></i>
+        </div>
+        <div class="input-wrapper">
+          <input type="email" placeholder="E-mail" />
+          <i class="fa fa-envelope fa-lg footer-icon email"></i>
+        </div>
+        </form>
+        <button class="footer-btn">Subskrybuj newsletter</button>
+      </div>
     </footer>
   </body>
 </html>
